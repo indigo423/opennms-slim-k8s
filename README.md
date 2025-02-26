@@ -45,3 +45,16 @@ helm install onms-postgres oci://registry-1.docker.io/bitnamicharts/postgresql -
 cd kustomize
 kustomize build | kubectl apply -f -
 ```
+
+### Enable port forwarding
+
+Access to the web user interface
+```shell
+kubectl port-forward services/hzn-core-webapp-tcp 8980:webapp
+```
+
+Access to the Karaf Shell
+```shell
+kubectl port-forward services/hzn-core-karaf-tcp 8101:karaf
+```
+
