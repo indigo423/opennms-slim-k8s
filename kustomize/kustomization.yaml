@@ -1,0 +1,14 @@
+---
+namespace: default
+resources:
+- namespace.yaml
+- hzn-core.configmap.yaml
+- hzn-core.pvc.data.yaml
+- hzn-core.pvc.deploy.yaml
+- hzn-core.pvc.fs.yaml
+- hzn-core.pvc.imports.yaml
+- hzn-core.pvc.logs.yaml
+- hzn-core.pvc.overlay.yaml
+- hzn-core.statefulset.yaml
+- hzn-core.service.karaf.yaml
+- hzn-core.service.web.yaml

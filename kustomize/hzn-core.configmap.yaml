@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hzn-core-config
+data:
+  TZ: "UTC"
+  OPENNMS_TIMESERIES_STRATEGY: "rrd"
+  POSTGRES_HOST: "onms-postgres-postgresql.default.svc.cluster.local"
+  POSTGRES_PORT: "5432"
+  POSTGRES_USER: "postgres"
+  OPENNMS_DBNAME: "opennms_hzn"
+  OPENNMS_DBUSER: "opennms_hzn_user"
+  SERVICE_NAME: "hzn-core"
+  GIT_REPO: "indigo423/opennms-slim-k8s-config"
+  GIT_HOST: "github.com"
+  GIT_BRANCH: "main"
